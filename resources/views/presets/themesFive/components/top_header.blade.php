@@ -50,6 +50,86 @@
     .glowing-btn:active {
         transform: scale(0.95);
     }
+
+    /* code by sumit */
+
+    /* responsive code */
+
+    @media only screen and (max-width:768px) {
+        .navbar-wrapper-area {
+            justify-content: space-between !important;
+            padding-right: 30px !important;
+            position: relative;
+        }
+
+
+        .navbar__right {
+            position: absolute;
+            top: 100%;
+            left: 0px !important;
+            background: rgb(218, 216, 216);
+            width: 100%;
+            padding-bottom: 10px;
+            border:1px dashed brown;
+            display:none;
+        }
+
+        ul.navbar__action-list {
+            flex-direction: column;
+            width: 100%;
+            align-items:start;
+        }
+
+        ul.navbar__action-list li {
+            /* border-top:2px solid brown; */
+            width: 100%;
+            border-bottom: 1px solid brown;
+        }
+
+        ul.navbar__action-list li:hover {
+            background: brown;
+        }
+
+        ul.navbar__action-list li:hover a p {
+            color: white !important;
+        }
+
+
+        ul.navbar__action-list li:nth-last-child(2)>button {
+            width: 100% !important;
+        }
+
+        ul.navbar__action-list li:nth-last-child(1){
+            width:fit-content !important;
+            margin-left:10px;
+            margin-top:10px;
+        }
+
+        .navbar-user__info,
+        .navbar-user .icon {
+            display: block !important;
+        }
+
+        .navbar-user .icon {
+            margin-left: auto !important;
+            margin-top:-8px !important;
+        }
+
+         ul.navbar__action-list li:nth-last-child(2):hover :where(.navbar-user__info span,.icon){
+            color:white !important;
+         }
+
+
+         ul.navbar__action-list li:nth-last-child(2)> .dropdown-menu {
+            position: relative !important;
+            left: -20px !important;
+        top: -41px !important;
+        width: 90vw !important;
+         }
+
+    }
+
+    /* navbar */
 </style>
 <nav class="navbar-wrapper">
     <div class="navbar-wrapper-area" style="justify-content: unset;">
@@ -59,6 +139,12 @@
                     alt="{{ config('app.name') }}" style="width: 120px;">
             </a>
         </div>
+
+        <div class="col-md-1 d-block d-md-none">
+            <i class="fa-solid fa-bars bar-close-btn"></i>
+            {{-- <i class="fa-solid fa-xmark"></i> --}}
+        </div>
+
         <div class="navbar__right col-md-10">
             <ul class="navbar__action-list">
                 <li class="sidebar-menu-item ">
@@ -129,5 +215,38 @@
                 </li>
             </ul>
         </div>
+
+
+
     </div>
 </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+
+$(document).ready(function() {
+
+    
+
+    $(".bar-close-btn").click(function(){
+
+        if($(this).hasClass("fa-bars")){
+            $(this).removeClass("fa-bars").addClass("fa-times");
+            $(".navbar__right").slideDown("fast");
+        }else{
+            $(this).removeClass("fa-times").addClass("fa-bars");
+             $(".navbar__right").slideUp("fast");
+        }
+
+       
+
+
+    });
+
+   
+
+});
+
+</script>

@@ -103,11 +103,34 @@
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+
+    /* code by sumit */
+
+    /* responsive code */
+
+    @media only screen and (max-width:768px) {
+        .custom-container {
+            padding-left: unset !important;
+            padding-right:unset !important;
+            width:90vw;
+            
+        }
+
+        .custom-container-first{
+            margin-left:6px;
+        }
+        .custom-container-first .card img{
+            object-fit: fill !important;
+        }
+
+
+    }
 </style>
 @section('content')
     <section class="home-profile mt-5 mb-5" style="background-color: #32323233; padding-top: 23px;">
         <div class="body-wrapper">
-            <div class="custom-container">
+            <div class="custom-container custom-container-first">
                 <div class="row">
                     {{-- @foreach ($modules as $module) --}}
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -197,26 +220,27 @@
                         </div>
                     @endforeach --}}
                     @foreach ($modules as $module)
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card card-hover" style="text-align:center; transition: transform 0.3s ease, box-shadow 0.3s ease;border-radius:50px;">
-                        <div class="mt-3"style="margin-top:0px !important;">
-                            <img src="{{ asset('modules/' . $module->image) }}"
-                                style="height: 200px; width: 100%; object-fit: cover;" alt="Module Image">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card card-hover"
+                                style="text-align:center; transition: transform 0.3s ease, box-shadow 0.3s ease;border-radius:50px;">
+                                <div class="mt-3"style="margin-top:0px !important;">
+                                    <img src="{{ asset('modules/' . $module->image) }}"
+                                        style="height: 200px; width: 100%; object-fit: cover;" alt="Module Image">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-3">
+                                        {{ $module->title }}
+                                        @if ($module->is_free)
+                                            <span class="badge bg-success ms-2">Free</span>
+                                        @endif
+                                    </h6>
+                                    <a href="{{ $module->url }}" class="btn btn-warning" style="font-size: small;">
+                                        {{ $module->btn_text }} <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body text-center">
-                            <h6 class="card-title mb-3">
-                                {{ $module->title }}
-                                @if ($module->is_free)
-                                    <span class="badge bg-success ms-2">Free</span>
-                                @endif
-                            </h6>
-                            <a href="{{ $module->url }}" class="btn btn-warning" style="font-size: small;">
-                                {{ $module->btn_text }} <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+                    @endforeach
                     {{-- @foreach ($modules as $module)
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="card card-hover"

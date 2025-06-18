@@ -1,5 +1,16 @@
 @extends($activeTemplate . 'layouts.auth')
 @section('content')
+
+    <style>
+        @media only screen and (max-width:767px) {
+            .account-form {
+                margin-block: 30px !important;
+                width: 90vw !important;
+            }
+        }
+    </style>
+
+
     @php
         $policyPages = getContent('policy_pages.element', false, null, true);
         $credentials = $general->socialite_credentials;
@@ -108,7 +119,8 @@
                                 </div>
                                 @if ($general->agree)
                                     <div class="col-sm-12 my-2">
-                                        <div class="form--check">
+                                        <div class="form--check d-flex justify-content-start align-items-start"
+                                            style="flex-wrap:unset !important;">
                                             <input class="form-check-input me-2" type="checkbox" id="agree"
                                                 @checked(old('agree')) name="agree" required>
                                             <label for="agree"> @lang('I agree with')
@@ -174,7 +186,7 @@
                 console.log(country_id);
                 $.ajax({
                     type: "POST",
-                    url: '{{ route('admin.getState')}}',
+                    url: '{{ route('admin.getState') }}',
                     data: {
                         'country_id': country_id,
                         _token: "{{ csrf_token() }}"

@@ -16,10 +16,14 @@
             width: 27rem;
             z-index: 5
         }
-.video{
-    border-top-left-radius: 100px 100px;
-    width:auto;height:500px!important"
-}
+
+        .video {
+            border-top-left-radius: 100px 100px;
+            width: auto;
+            height: 500px !important"
+
+        }
+
         .product-slider {
             width: 500px;
             padding: 30px 30px 30px 30px;
@@ -30,13 +34,15 @@
             bottom: 20%;
             height: 430px;
         }
-              .product-slider h1{
+
+        .product-slider h1 {
             font-size: 38px;
             margin: 0;
             padding-top: 10px;
             text-align: center;
         }
-                      .product-slider h5{
+
+        .product-slider h5 {
             font-size: 20px;
             margin: 0;
             padding-top: 10px;
@@ -111,7 +117,7 @@
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px;
-            
+
         }
 
         .swiper-slide {
@@ -182,7 +188,8 @@
         .swiper-3d .swiper-slide-shadow-right {
             background-image: none;
         }
-         @media (max-width: 1199px) and (min-width: 768px) {
+
+        @media (max-width: 1199px) and (min-width: 768px) {
             .product-slider .slick-slide {
                 width: 100% !important;
                 height: auto !important;
@@ -199,63 +206,72 @@
 
 
             /* login/register btn */
-.video{
-    border-radius:5px;
-    width:auto;height:250px!important"
-}
-            .navbar-nav li a{
-                display:inline-block !important;
-                width:fit-content !important;
-                padding-inline:20px !important;
-                padding-block:5px !important;
-                background:brown !important;
-                color:white !important; 
-                border-radius:10px;
+            .video {
+                border-radius: 5px;
+                width: auto;
+                height: 250px !important"
+
             }
 
-            .navbar-nav li a:active, .navbar-nav li a:focus{
-                background:brown !important;
-                color:white !important; 
-                display:inline-block !important;
+            .navbar-nav li a {
+                display: inline-block !important;
+                width: fit-content !important;
+                padding-inline: 20px !important;
+                padding-block: 5px !important;
+                background: brown !important;
+                color: white !important;
+                border-radius: 10px;
             }
-.header-right{
-        margin-top:-40px!important;
-        margin-left: auto; 
-margin-right: 0;
-    }
-    .latest-header{
-        height:55px!important;
-    }
+
+            .navbar-nav li a:active,
+            .navbar-nav li a:focus {
+                background: brown !important;
+                color: white !important;
+                display: inline-block !important;
+            }
+
+            .header-right {
+                margin-top: -40px !important;
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            .latest-header {
+                height: 55px !important;
+            }
+
             /* banner video */
 
             .ed-hero.ed-hero--style5 .ed-hero__img {
-                display:block !important;
-                position:relative !important;
-                width:100vw !important;
-                height:250px !important;
-                max-width:100vw !important;
-                margin-top:-100px !important;
+                display: block !important;
+                position: relative !important;
+                width: 100vw !important;
+                height: 250px !important;
+                max-width: 100vw !important;
+                margin-top: -100px !important;
             }
 
-             .ed-hero.ed-hero--style5 .ed-hero__img video{
-                object-fit:fill !important;
-                width:92vw !important;
-                height:100% !important;
-                margin:auto !important;
-                display:block !important;
-             }
-           .ed-hero.ed-hero--style5 .ed-hero__content{
-               margin-top:0px!important;
-           }
+            .ed-hero.ed-hero--style5 .ed-hero__img video {
+                object-fit: fill !important;
+                width: 92vw !important;
+                height: 100% !important;
+                margin: auto !important;
+                display: block !important;
+            }
+
+            .ed-hero.ed-hero--style5 .ed-hero__content {
+                margin-top: 0px !important;
+            }
+
             /* slick slider */
             .product-slider {
                 height: 300px !important;
-               
+
             }
 
             .product-slider.slick-slider {
                 padding: 0px !important;
-                
+
             }
 
             .product-slider .slick-slide {
@@ -268,7 +284,8 @@ margin-right: 0;
             .product-slider .slick-slide h1 {
                 width: 100vw !important;
                 text-align: center !important;
-                margin-left:30px;
+                margin-left: 30px;
+                /* font-size:1.7rem; */
             }
 
             .product-slider .slick-slide img {
@@ -284,43 +301,45 @@ margin-right: 0;
 
             /* swiper slide */
 
-                .swiper{
-                    margin-top:-60px;
-                    margin-bottom:-32px;
-                }
-            .p-4{
-                   height:200px!important;
-                }
-                .swiper-slide{
-                    
-                    width:30vw !important;
-                    height:30vh !important;
-                }
+            .swiper {
+                margin-top: -60px;
+                margin-bottom: -32px;
+            }
 
-                .swiper-slide-active{                   
-                    width:35vw !important;
-                    height:35vh !important;
-                    
-                }
+            .p-4 {
+                height: 200px !important;
+            }
 
-                .swiper-wrapper{
-                    scale:0.8 !important;
-                }
+            .swiper-slide {
 
-                .swiper-slide h2{
-                    font-size:0.8rem !important;
-                    padding: 5px 5px 5px 5px;
-                    margin-bottom:0px!important;
-                }
+                width: 30vw !important;
+                height: 30vh !important;
+            }
 
-                .swiper-wrapper{
-                    padding-block:36px !important;
-                }
+            .swiper-slide-active {
+                width: 35vw !important;
+                height: 35vh !important;
 
-.home-stats-wrapper {
-    padding:10px!important;
-}
-                
+            }
+
+            .swiper-wrapper {
+                scale: 0.8 !important;
+            }
+
+            .swiper-slide h2 {
+                font-size: 0.8rem !important;
+                padding: 5px 5px 5px 5px;
+                margin-bottom: 0px !important;
+            }
+
+            .swiper-wrapper {
+                padding-block: 36px !important;
+            }
+
+            .home-stats-wrapper {
+                padding: 10px !important;
+            }
+
         }
     </style>
     <section class="ed-hero ed-hero--style5">
@@ -338,9 +357,11 @@ margin-right: 0;
                         <div class="product-slider">
                             @foreach (App\Models\Bannerslider::all() as $index => $slider)
                                 <h1>
-                                    {{ $slider->title }} <br><p style="font-size:28px;margin-top:20px;text-align:center;font-family: 'Gloria Hallelujah', cursive;color: #ff8200;">{{ $slider->description }}</p>
+                                    {{ $slider->title }} <br>
+                                    <p
+                                        style="font-size:28px;margin-top:20px;text-align:center;font-family: 'Gloria Hallelujah', cursive;color: #ff8200;">
+                                        {{ $slider->description }}</p>
                                 </h1>
-                                
                             @endforeach
                         </div>
                         <!-- Hero Team  -->
@@ -353,8 +374,7 @@ margin-right: 0;
         <!-- Hero Image -->
 
         <div class="ed-hero__img">
-            <video class="video" data-rellax-speed="0" autoplay="" muted="" loop="" playsinline=""
-                >
+            <video class="video" data-rellax-speed="0" autoplay="" muted="" loop="" playsinline="">
                 <source src="https://identity.zpsdemo.in/assets/images/frontend/video/Journeyvideo.mp4" type="video/mp4">
             </video>
         </div>
@@ -387,6 +407,7 @@ margin-right: 0;
             grabCursor: false,
             centeredSlides: true,
             slidesPerView: "auto",
+            autoplay:true,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -417,6 +438,7 @@ margin-right: 0;
                     dots: false,
                     arrows: false,
                     infinite: true,
+                    autoplay:true,
                 });
             });
         });
