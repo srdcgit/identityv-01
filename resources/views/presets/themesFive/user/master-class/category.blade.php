@@ -19,6 +19,36 @@
         height: auto;
         z-index: 2;
     }
+
+    /* code by sumit */
+
+    @media only screen and (min-width:768px) {
+        .card.category-card {
+            height: fit-content !important;
+            min-height: 280px !important;
+        }
+
+        .card.category-card img {
+            width: 100% !important;
+            height: 150px !important;
+            object-fit: fill !important;
+        }
+    }
+
+
+    @media only screen and (max-width:768px){
+         .card.category-card {
+            height: fit-content !important;
+            
+        }
+
+        .card.category-card img {
+            width: 100% !important;
+            height: 150px !important;
+            object-fit: fill !important;
+        }
+    }
+
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
@@ -43,7 +73,7 @@
                                     style="top: 10px; right: 10px; width: 40px; height: auto; z-index: 2;"> --}}
                                 {{-- @endif --}}
 
-                                <div class="mt-3">
+                                <div class="mt-0">
                                     <img src="{{ asset('category/' . $category->file) }}" class="category-image"
                                         style="height: 200px; width:190px">
                                 </div>

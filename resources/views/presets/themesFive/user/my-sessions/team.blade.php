@@ -168,6 +168,18 @@
     .card__button {
         transition: background-color 0.3s ease;
     }
+
+    /* code by sumit */
+
+    /* responsive code */
+
+    @media only screen and (max-width:768px){
+        #animated-cards .card{
+            width:90vw !important;
+        }
+    }
+
+
 </style>
 
 @section('content')

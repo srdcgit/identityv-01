@@ -4,6 +4,12 @@
     .table tbody th {
     border-bottom-width: 0px !important;
 }
+
+.table-responsive{
+    max-width:100% !important;
+}
+
+
 </style>
 @section('content')
 {{-- <div class="card">
