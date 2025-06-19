@@ -19,6 +19,19 @@
         height: auto;
         z-index: 2;
     }
+
+    /* responsive code */
+    @media only screen and (max-width:768px) {
+        .card.category-card {
+            height: fit-content !important;
+        }
+
+        .card.category-card img {
+            width: 100% !important;
+            height: 150px !important;
+            object-fit:fill !important;
+        }
+    }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
@@ -41,7 +54,8 @@
                                         style="height: 200px; width:260px">
                                 </div>
                                 <div class="card-body text-center"style="background:#ab2931;padding:10px !important;">
-                                    <h5 class="card-title" style="color:#fff;font-family:sans-serif;!important"> {{ $category->title }} </h5>
+                                    <h5 class="card-title" style="color:#fff;font-family:sans-serif;!important">
+                                        {{ $category->title }} </h5>
                                 </div>
                             </a>
                         </div>

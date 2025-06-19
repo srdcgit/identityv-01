@@ -299,6 +299,23 @@
         
     } 
 
+
+    /* responsive code */
+
+    @media only screen and (max-width:768px){
+        .sticky-nav{
+            display:none;
+        }
+
+        .content-area{
+            width:86% !important;
+        }
+
+        .navbar-user .icon{
+            padding-top:10px !important;
+        }
+    }
+
 </style>
 
 @section('content')
@@ -607,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-</script> --}}
+</script> 
 
 
 
@@ -659,7 +676,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-</script> --}}
+</script>
 
 
 

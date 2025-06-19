@@ -1,13 +1,13 @@
 @extends($activeTemplate . 'layouts.master')
 
 <style>
-    .category-card {
+    .card.category-card {
         transition: transform 0.3s, border-color 0.3s;
         border: 2px solid transparent;
     }
 
-    .category-card:hover {
-        transform: scale(1.05);
+    .card.category-card:hover {
+        transform: scale(1.05) ;
         border-color: hsl(var(--base));
     }
 
@@ -19,6 +19,23 @@
         height: auto;
         z-index: 2;
     }
+
+
+     /* responsive code */
+
+        @media only screen and (max-width:768px){
+             .card.category-card{
+                height:fit-content !important;
+             }
+            .card.category-card img{
+                width:100% !important;
+                height:150px !important;
+                object-fit:fill !important;
+            }
+        }
+
+
+
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
