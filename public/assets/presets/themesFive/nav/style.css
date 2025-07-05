@@ -2344,7 +2344,7 @@ iframe {
 }
 
 .topbar {
-    background-color: #ab2931;
+    background-color: var(--template-color);
 }
 
 /* Styles for mobile and tablets */

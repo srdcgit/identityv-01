@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
-
-/*================ Css Variables Start ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/*================ Css Variables Start ===============*/
 
 :root {
-    --heading-font: "Unbounded", sans-serif;
-    --body-font: "Unbounded", sans-serif;
+    --heading-font: "Poppins", sans-serif ;
+    --body-font: "Poppins", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --template-color:#9F2D26;
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
     --heading-two: clamp(1.375rem, 1.7vw + 1rem, 2.5rem);
     --heading-three: clamp(2rem, .8vw + 1rem, 1.875rem);
@@ -215,6 +215,20 @@
     --yellow-l-500: var(--yellow-h) calc(var(--yellow-s)) calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.5);
     --yellow-l-600: var(--yellow-h) calc(var(--yellow-s)) calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.6);
 }
+
+
+
+
+*:not(.fa):not(.fab):not(.fas):not(.fa-brands):not(.fa-solid):not(.las){
+    font-family: var(--poppins) !important;   
+}
+
+.title :where(h1,h2,h3,h4,h5,h6),.title-primary,.new-success-stories h4{
+    color:var(--template-color) !important;
+}
+
+
+
 body .navbar-wrapper{
     padding-top: 60px;
 }
@@ -5399,6 +5413,7 @@ select.form-control.form--control:has(option)~.form--label {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
+    /* font-family: var(--poppins); */
     text-transform: capitalize;
 }
 
@@ -8740,6 +8755,9 @@ ul.social-list.blog-details {
 
 /* code by sumit */
 
+.footer-area{
+    background:var(--template-color);
+}
 
 .footer-item__desc{
                 font-size:1.1rem;

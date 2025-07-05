@@ -189,6 +189,23 @@
             background-image: none;
         }
 
+
+        .first-word-blue {
+            background-color: var(--template-color);
+            color: #fff;
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+
+         .swiper-slide{
+            transition:scale 0.5s ease !important;
+         }
+
+        .swiper-slide:hover:not(.swiper-slide-active){
+            scale:1.1 !important;
+        }
+
+
         @media (max-width: 1199px) and (min-width: 768px) {
             .product-slider .slick-slide {
                 width: 100% !important;
@@ -346,15 +363,14 @@
         <!-- Hero Shapes  -->
         <div class="ed-hero-shapes">
             <img class="shape-1" src="assets/images/hero/home-5/circle-pattern.svg" alt="circle-pattern" />
-            <img class="shape-2 updown-ani" src="assets/images/hero/home-5/arrow-shape.svg" alt="arrow-shape" />
-            <img class="shape-3 rotate-ani" src="assets/images/hero/home-5/circle-shape.svg" alt="circle-shape" />
+          
         </div>
         <div class="container ed-container-expand">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12">
                     <!-- Hero Content -->
                     <div class="ed-hero__content">
-                        <div class="product-slider">
+                        {{-- <div class="product-slider">
                             @foreach (App\Models\Bannerslider::all() as $index => $slider)
                                 <h1>
                                     {{ $slider->title }} <br>
@@ -363,7 +379,27 @@
                                         {{ $slider->description }}</p>
                                 </h1>
                             @endforeach
+                        </div> --}}
+
+                        <div class="product-slider">
+                            @foreach (App\Models\Bannerslider::all() as $index => $slider)
+                                <h1 style="text-align: left;">
+                                    @php
+                                        $words = explode(' ', $slider->title, 2);
+                                    @endphp
+                                    <span class="first-word-blue">{{ $words[0] }}</span>
+                                    @if(isset($words[1]))
+                                        {{ ' ' . $words[1] }}
+                                    @endif
+                                    <br>
+                                    <p
+                                        style="font-size:28px;margin-top:20px;text-align:left;font-family: 'Gloria Hallelujah', cursive;color: #ff8200;">
+                                        {{ $slider->description }}
+                                    </p>
+                                </h1>
+                            @endforeach
                         </div>
+
                         <!-- Hero Team  -->
                     </div>
                 </div>
@@ -375,7 +411,7 @@
 
         <div class="ed-hero__img">
             <video class="video" data-rellax-speed="0" autoplay="" muted="" loop="" playsinline="">
-                <source src="https://identity.zpsdemo.in/assets/images/frontend/video/Journeyvideo.mp4" type="video/mp4">
+                <source src="{{ asset('assets/images/frontend/video/Journeyvideo.mp4') }}" type="video/mp4">
             </video>
         </div>
     </section>
@@ -407,7 +443,7 @@
             grabCursor: false,
             centeredSlides: true,
             slidesPerView: "auto",
-            autoplay:true,
+            autoplay: true,
             coverflowEffect: {
                 rotate: 0,
                 stretch: 0,
@@ -420,7 +456,7 @@
             // pagination: {
             //     el: ".swiper-pagination",
             //     clickable: true
-            // },
+            // }, 
             slideToClickedSlide: true
         });
     </script>
@@ -438,7 +474,7 @@
                     dots: false,
                     arrows: false,
                     infinite: true,
-                    autoplay:true,
+                    autoplay: true,
                 });
             });
         });

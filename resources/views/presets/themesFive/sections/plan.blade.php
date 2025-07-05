@@ -720,35 +720,35 @@
         <ul class="home-stats-list">
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="https://identity.zpsdemo.in/assets/images/features/awareness.png"
+                    <img decoding="async" src="{{ asset('assets/images/features/awareness.png')}}"
                         class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>CAREER AWARENESS TO 2 MILLION STUDENTS </span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="https://identity.zpsdemo.in/assets/images/features/counseller.png"
+                    <img decoding="async" src="{{ asset('assets/images/features/counseller.png')}}"
                         class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>110 COUNSELLORS TRAINED AND CERTIFIED</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="https://identity.zpsdemo.in/assets/images/features/cell.png"
+                    <img decoding="async" src="{{asset('assets/images/features/cell.png')}}"
                         class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>15 CAREER CELLS SET UP ALL OVER ODISHA</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="https://identity.zpsdemo.in/assets/images/features/mou.png"
+                    <img decoding="async" src="{{asset('assets/images/features/mou.png')}}"
                         class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>15 MOUs SIGNED WITH KNOWLEDGE PARTNERS</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="https://identity.zpsdemo.in/assets/images/features/uni.png"
+                    <img decoding="async" src="{{asset('assets/images/features/uni.png')}}"
                         class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>55+ ASSOCIATES WITH UNIVERSITIES ALL OVER THE COUNTRY</span>
@@ -764,21 +764,21 @@
             <div class="col-md-6">
                 <div class="ss-box for-video"style="border-radius:30px">
                     <div>
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/1.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/1.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/2.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/2.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/3.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/3.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/4.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/4.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/5.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/5.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/6.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/6.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/7.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/7.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides1" src="https://identity.zpsdemo.in/assets/images/awards/8.jpeg"
+                        <img class="mySlides1" src="{{asset('assets/images/awards/8.jpeg')}}"
                             style="width:100%">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
@@ -789,17 +789,17 @@
             <div class="col-md-6">
                 <div class="ss-box for-video" style="border-radius:30px">
                     <div>
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/3.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/3.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/1.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/1.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/2.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/2.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/4.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/4.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/5.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/5.jpeg')}}"
                             style="width:100%">
-                        <img class="mySlides2" src="https://identity.zpsdemo.in/assets/images/recognition/6.jpeg"
+                        <img class="mySlides2" src="{{asset('assets/images/recognition/6.jpeg')}}"
                             style="width:100%">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>

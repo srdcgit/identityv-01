@@ -25,7 +25,9 @@
 
     .glowing-btn {
         position: relative;
-        background: linear-gradient(90deg, #ffd700, #f9a602);
+        /* background: linear-gradient(90deg, #ffd700, #f9a602); */
+        /* background:#E5E4E2 !important; */
+        background:#E5E4E2 !important;
         color: #000;
         font-weight: bold;
         padding: 12px 30px;
@@ -38,6 +40,10 @@
         cursor: pointer;
     }
 
+    a:hover{
+        color:white !important;
+    }
+
     .glowing-btn::before {
         content: "";
         position: absolute;
@@ -45,19 +51,30 @@
         left: -2px;
         right: -2px;
         bottom: -2px;
-        background: linear-gradient(90deg, #fffacd, #ffeb3b, #ffdd00);
+        /* background: linear-gradient(90deg, #fffacd, #ffeb3b, #ffdd00); */
+        /* background:#E5E4E2 !important; */
+        background:#E5E4E2 !important;
         z-index: -1;
         filter: blur(4px);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+
     }
 
     .glowing-btn:hover {
         transform: scale(1.1);
+        background:var(--template-color) !important;
+        color:white !important;
     }
+
+     .glowing-btn:hover span{
+        color:white !important;
+     }
 
     .glowing-btn:hover::before {
         opacity: 1;
+        background:var(--template-color) !important;
+        color:white !important;
     }
 
     .glowing-btn:active {
@@ -146,7 +163,7 @@
                                 <p>welcome</p>
                                 <h5 class="card-title mb-3"> {{ $user->username }} </h5>
                                 <a href="{{ route('user.upgradeplanupgrade') }}"
-                                    class="btn btn-warning {{ Auth::check() && Auth::user()->is_upgrade ? 'glowing-btn' : '' }}">
+                                    class="btn {{ Auth::check() && Auth::user()->is_upgrade ? 'glowing-btn' : '' }}" style="background:#E5E4E2;">
                                     @if (Auth::check() && Auth::user()->is_upgrade)
                                         {{ Auth::user()->getUpgrade->plan_name }}
                                     @else
@@ -167,7 +184,7 @@
                             </div>
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-3"> </h5>
-                                <a href="" class="btn btn-warning">Start Assesment<i
+                                <a href="" class="btn" style="background:var(--template-color); color:white;">Start Assesment<i
                                         class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -234,7 +251,7 @@
                                             <span class="badge bg-success ms-2">Free</span>
                                         @endif
                                     </h6>
-                                    <a href="{{ $module->url }}" class="btn btn-warning" style="font-size: small;">
+                                    <a href="{{ $module->url }}" class="btn" style="font-size: small; background:var(--template-color); color:white;">
                                         {{ $module->btn_text }} <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>

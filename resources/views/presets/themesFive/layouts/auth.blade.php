@@ -37,7 +37,7 @@
 <script src="{{asset($activeTemplateTrue.'js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset($activeTemplateTrue.'js/odometer.min.js')}}"></script>
 <script src="{{asset($activeTemplateTrue.'js/viewport.jquery.js')}}"></script>
-<script src="{{asset($activeTemplateTrue.'js/smoothscroll.min.js')}}"></script>
+{{-- <script src="{{asset($activeTemplateTrue.'js/smoothscroll.min.js')}}"></script> --}}
 <script src="{{asset($activeTemplateTrue.'js/wow.min.js')}}"></script>
 <script src="{{asset($activeTemplateTrue.'js/lightcase.js')}}"></script>
 <script src="{{asset($activeTemplateTrue.'js/main.js')}}"></script>

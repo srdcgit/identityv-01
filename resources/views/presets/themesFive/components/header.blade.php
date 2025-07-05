@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="{{ asset('assets/presets/themesFive/nav/style.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/presets/themesFive/section-css/hero.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/presets/themesFive/section-css/about.css') }}">
+
+
 @php
     $languages = App\Models\Language::all();
     $pages = App\Models\Page::where('tempname', $activeTemplate)->get();
