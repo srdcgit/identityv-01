@@ -6,6 +6,21 @@
 @endphp
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+{{-- owl carousal cdnjs --}}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 <!--========================== Career Plan Start ==========================-->
 {{-- <section class="plan py-100">
     <div class="container">
@@ -546,7 +561,7 @@
         opacity: 0;
         transition: opacity 0.25s ease-out;
         background-color: #c0c0c0;
-        width:100%;
+        width: 100%;
     }
 
     @media only screen and (min-width: 768px) {
@@ -687,7 +702,91 @@
         -ms-user-select: none;
         user-select: none
     }
+
+
+    /* code by sumit */
+
+    /* .swiper.new-testimonial  {
+      width: 100%;
+      height: 100%;
+    }
+
+   .new-testimonial .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .new-testimonial  .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+
+    .testimonial-box {
+        width: 90%;
+        /* height: 200px; */
+        border-radius: 20px;
+        /* box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1); */
+        padding-inline: 15px;
+    }
+
+
+    .owl-stage-outer {
+        padding-block: 20px;
+    }
+
+    .owl-dots {
+        display: none !important;
+    }
+
+    .testimonial-box .star-rating-box {
+        text-align: end;
+    }
+
+    .testimonial-box .fa-quote-left {
+        color: var(--template-color);
+    }
+
+    .testimonial-box i {
+        color: rgb(235, 212, 86);
+    }
+
+    .testimonial-box .bottom-content p {
+        color: rgb(224, 127, 127) !important;
+        font-weight: 600 !important;
+        line-height: 16px !important;
+    }
+
+    .testimonial-box .bottom-content h5 {
+        text-align: left;
+    }
+
+    .owl-nav button {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background: var(--template-color) !important;
+        color: white !important;
+        scale: 0.95 !important;
+    }
+
+    .owl-nav button span {
+        scale: 1.5 !important;
+        display: block !important;
+    }
+
+    .owl-nav {
+        margin-top: 0px !important;
+
+    }
 </style>
+
 
 <div class="home-stats-main-wrapper animate-section animated">
     <div class="home-stats-wrapper">
@@ -720,36 +819,31 @@
         <ul class="home-stats-list">
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="{{ asset('assets/images/features/awareness.png')}}"
-                        class=" lazyloaded"
+                    <img decoding="async" src="{{ asset('assets/images/features/awareness.png') }}" class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>CAREER AWARENESS TO 2 MILLION STUDENTS </span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="{{ asset('assets/images/features/counseller.png')}}"
-                        class=" lazyloaded"
+                    <img decoding="async" src="{{ asset('assets/images/features/counseller.png') }}" class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>110 COUNSELLORS TRAINED AND CERTIFIED</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="{{asset('assets/images/features/cell.png')}}"
-                        class=" lazyloaded"
+                    <img decoding="async" src="{{ asset('assets/images/features/cell.png') }}" class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>15 CAREER CELLS SET UP ALL OVER ODISHA</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="{{asset('assets/images/features/mou.png')}}"
-                        class=" lazyloaded"
+                    <img decoding="async" src="{{ asset('assets/images/features/mou.png') }}" class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>15 MOUs SIGNED WITH KNOWLEDGE PARTNERS</span>
             </li>
             <li class="home-stats-item animate-card">
                 <div>
-                    <img decoding="async" src="{{asset('assets/images/features/uni.png')}}"
-                        class=" lazyloaded"
+                    <img decoding="async" src="{{ asset('assets/images/features/uni.png') }}" class=" lazyloaded"
                         style="--smush-placeholder-width: 76px; --smush-placeholder-aspect-ratio: 76/76;">
                 </div><span>55+ ASSOCIATES WITH UNIVERSITIES ALL OVER THE COUNTRY</span>
             </li>
@@ -764,22 +858,14 @@
             <div class="col-md-6">
                 <div class="ss-box for-video"style="border-radius:30px">
                     <div>
-                        <img class="mySlides1" src="{{asset('assets/images/awards/1.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/2.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/3.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/4.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/5.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/6.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/7.jpeg')}}"
-                            style="width:100%">
-                        <img class="mySlides1" src="{{asset('assets/images/awards/8.jpeg')}}"
-                            style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/1.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/2.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/3.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/4.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/5.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/6.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/7.jpeg') }}" style="width:100%">
+                        <img class="mySlides1" src="{{ asset('assets/images/awards/8.jpeg') }}" style="width:100%">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
                     </div>
@@ -789,17 +875,17 @@
             <div class="col-md-6">
                 <div class="ss-box for-video" style="border-radius:30px">
                     <div>
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/3.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/3.jpeg') }}"
                             style="width:100%">
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/1.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/1.jpeg') }}"
                             style="width:100%">
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/2.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/2.jpeg') }}"
                             style="width:100%">
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/4.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/4.jpeg') }}"
                             style="width:100%">
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/5.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/5.jpeg') }}"
                             style="width:100%">
-                        <img class="mySlides2" src="{{asset('assets/images/recognition/6.jpeg')}}"
+                        <img class="mySlides2" src="{{ asset('assets/images/recognition/6.jpeg') }}"
                             style="width:100%">
                         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
                         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
@@ -810,30 +896,96 @@
     </div>
 </div>
 
+<!-- Testimonial old code  -->
+@php
+    $about = getContent('testimonial.content', true);
+    $aboutElements = getContent('testimonial.element', false, 7);
+@endphp
 <div class="new-success-stories for-stream home-stats-main-wrapper animate-section animated" style="display: block;">
     <div class="container col-md-12">
-        <h2 class="title-primary">Our Testimonials</h2>
+        <div class="text-start text-center my-5">
+            <h6 style="font-weight:700;">{{ __(@$about->data_values->top_heading) }}</h6>
+            <h1 style="color:var(--template-color);">{{ __(@$about->data_values->heading) }}</h1>
+            <span style="font-weight:600;">{{ __(@$about->data_values->subheading) }}</span>
+        </div>
+
         <div class="row">
-            <!-- Left column with text -->
             <div class="col-md-6">
                 <div
                     style="height: 100%;padding: 30px; background: #ffffff; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);">
 
-                    <h4 style="margin-bottom: 20px; font-weight: 600; color: #333;">What Our Clients Say</h4>
 
-                    @foreach (App\Models\Testimonial::latest()->take(10)->get() as $testimonial)
-                        <p style="margin-bottom: 15px; font-size: 15px; line-height: 1.6; color: #555;">
-                          "{{ $testimonial->text }}"
-                        </p>
-                    @endforeach
 
+
+
+                    <div class="owl-carousel owl-theme">
+                        @php
+                            $aboutElements = \App\Models\Frontend::where('data_keys', 'testimonial.element')->get();
+                        @endphp
+
+                        @foreach ($aboutElements as $about)
+                            <div class="item d-flex justify-content-center align-items-center gap-3">
+
+                                <div class="testimonial-box">
+
+                                    <div class="top-part d-flex justify-content-between align-items-center">
+                                        <i class="fa-solid fa-quote-left fs-1"></i>
+                                        <div class="star-rating-box">
+                                            @php
+                                                $starCount = (int) @$about->data_values->star_count;
+                                                $maxStars = 5;
+                                            @endphp
+                                            @for ($i = 1; $i <= $starCount; $i++)
+                                                @if ($i <= $starCount)
+                                                    <i class="fa-solid fa-star"></i>
+                                                @else
+                                                    <i class="fa-regular fa-star"></i>
+                                                @endif
+                                            @endfor
+                                        </div>
+                                    </div>
+
+                                    <div class="testimonial-content">
+
+                                        <p style="line-height:20px; min-height: 60px;">
+                                            {{ @$about->data_values->description }}</p>
+
+                                    </div>
+
+
+                                    <div class="bottom-part d-flex justify-content-start align-items-start gap-3 mt-4">
+
+                                        <div class="image" style="width:50px; height:50px; border-radius:50%;">
+                                            <img src="{{ getImage(getFilePath('frontend') . '/testimonial' . '/' . @$about->data_values->testimonial_image) }}"
+                                                alt=""
+                                                style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                                        </div>
+
+                                        <div class="bottom-content">
+                                            <h5 class="mb-1 fw-bolder" style="font-size:15px;">
+                                                {{ @$about->data_values->title }}</h5>
+                                            <p style="color:#918e8e">{{ @$about->data_values->designation }}</p>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+                        @endforeach
+
+
+                    </div>
                 </div>
             </div>
 
-            <!-- Right column with scrollable video list -->
+
             <div class="col-md-6">
-                <div style="max-height: 400px; overflow-y: auto; padding-right: 10px;border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);"">
-                    <!-- Loop through each testimonial video URL -->
+                <div
+                    style="max-height: 400px; overflow-y: auto; padding-right: 10px;border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);"">
                     @foreach (App\Models\Testimonial::all() as $testimonial)
                         @if ($testimonial->video)
                             <div class="ss-box for-video">
@@ -850,6 +1002,39 @@
         </div>
     </div>
 </div>
+
+<!-- Testimonial new code by sumit  -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>
+
+
 
 
 <script>

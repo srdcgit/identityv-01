@@ -322,7 +322,7 @@
     <div class="page-wrapper">
         <div class="scroll-container">
             <div class="container">
-                <div class="row pt-4 pb-4" style="background-color: rgba(33, 113, 138, .89); border-radius:8px; color:#fff">
+                <div class="row pt-4 pb-4" style="background-color: var(--template-color); border-radius:8px; color:#fff">
                     <div class="col-md-8">
                         <div class="summary">
                             <h3 style="color: #f8be14"> {{ $viewSubcategory->title }} </h3>

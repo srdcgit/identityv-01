@@ -129,7 +129,65 @@
 
     }
 
+      .glowing-btn {
+        position: relative;
+        /* background: linear-gradient(90deg, #ffd700, #f9a602); */
+        /* background:#E5E4E2 !important; */
+        background:#E5E4E2 !important;
+        color: #000;
+        font-weight: bold;
+        padding: 12px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color:white !important;
+    }
+
+    .glowing-btn::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        /* background: linear-gradient(90deg, #fffacd, #ffeb3b, #ffdd00); */
+        /* background:#E5E4E2 !important; */
+        background:#E5E4E2 !important;
+        z-index: -1;
+        filter: blur(4px);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+    }
+
+    .glowing-btn:hover {
+        transform: scale(1.1);
+        background:var(--template-color) !important;
+        color:white !important;
+    }
+
+     .glowing-btn:hover span{
+        color:white !important;
+     }
+
+    .glowing-btn:hover::before {
+        opacity: 1;
+        background:var(--template-color) !important;
+        color:white !important;
+    }
+
+    .glowing-btn:active {
+        transform: scale(0.95);
+    }
     /* navbar */
+
 </style>
 <nav class="navbar-wrapper">
     <div class="navbar-wrapper-area" style="justify-content: unset;">
