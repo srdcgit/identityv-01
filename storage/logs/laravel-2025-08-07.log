@@ -1,0 +1,555 @@
+[2025-08-07 16:32:33] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:32:33] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:32:43] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:32:43] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 5
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:32:47] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:32:47] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:32:58] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:32:58] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 5
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:33:32] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:33:32] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:34:13] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:34:13] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 5
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:34:33] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:34:33] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:34:46] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:34:46] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 5
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:34:59] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:34:59] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:35:38] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:35:38] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:36:18] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:36:18] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:36:30] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:36:30] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:37:25] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:37:25] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:37:28] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:37:28] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 5
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
+[2025-08-07 16:37:38] localhost.INFO: Detected N+1 Query  
+[2025-08-07 16:37:38] localhost.INFO: Model: App\Models\Subcategory
+Relation: institutions
+Num-Called: 10
+Call-Stack:
+#18 /storage/framework/views/c9fac305ee32640c887c58aaa7d226a9.php:26
+#20 /vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:124
+#21 /vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:58
+#22 /vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:72
+#23 /vendor/laravel/framework/src/Illuminate/View/View.php:207
+#24 /vendor/laravel/framework/src/Illuminate/View/View.php:190
+#25 /vendor/laravel/framework/src/Illuminate/View/View.php:159
+#26 /vendor/laravel/framework/src/Illuminate/Http/Response.php:69
+#27 /vendor/laravel/framework/src/Illuminate/Http/Response.php:35
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:918
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:885
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:805
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:144
+#32 /app/Http/Middleware/RedirectIfNotAdmin.php:22
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#34 /vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php:66
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#36 /app/Http/Middleware/LanguageMiddleware.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#38 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#40 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:78
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#42 /vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php:49
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#44 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:121
+#45 /vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php:64
+#46 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#47 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php:37
+#48 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:183
+#49 /vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php:67
+  
